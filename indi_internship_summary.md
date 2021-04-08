@@ -36,37 +36,41 @@ during numo indi software engineer internship (01/25/2021 - 04/23/2021).
 ### FENDER-2632: SendGrid: Determine all consumers of fender-sender
 ### FENDER-2633: SendGrid: Syncing contact data
 ### FENDER-2679: Change ApplicationDate format in Salesforce
-    ```py
-    sf["ApplicationDate__c"] = profile["applicationDate"].replace(" ", "T")
-    ```
+```py
+sf["ApplicationDate__c"] = profile["applicationDate"].replace(" ", "T")
+```
     
-    Reformatted the existing application date data from YYYY-MM-DD HH:MM:SS 
-    to YYYY-MM-DDTHH:MM:SS to comply with formatting in Salesforce. Later the
-    code above needed to be replaced with more elegant fix (see below) by Bruce because
-    the existing data in Prod environment had more variants.
+Reformatted the existing application date data from YYYY-MM-DD HH:MM:SS 
+to YYYY-MM-DDTHH:MM:SS to comply with formatting in Salesforce. Later the
+code above needed to be replaced with more elegant fix (see below) by Bruce because
+the existing data in Prod environment had more variants.
 
-    ```py
-    pendulum.parse(fuzzy).to_iso8601_string()
-    ```
+```py
+pendulum.parse(fuzzy).to_iso8601_string()
+```
     
 ### FENDER-2681: Send user Address information to Salesforce
-    When the user submits the application, the user address is saved in Okta and Visa, but
-    the data was not relayed to Salesforce. For the story, the new user address data was taken
-    from `fender-application-processor`, sent to `fender-force` and put on 
-    `customer-service-queue` lambda. For existing users, when the user address is updated,
-    the updated address is taken from profile_processor in `fender-RTAC`, and sent to 
-    `fender-force`. There was an extra challenge of finding out what compound data field 
-    must look like for Salesforce.
+When the user submits the application, the user address is saved in Okta and Visa, but
+the data was not relayed to Salesforce. For the story, the new user address data was taken
+from `fender-application-processor`, sent to `fender-force` and put on 
+`customer-service-queue` lambda. For existing users, when the user address is updated,
+the updated address is taken from profile_processor in `fender-RTAC`, and sent to 
+`fender-force`. There was an extra challenge of finding out what compound data field 
+must look like for Salesforce.
 
 ### FENDER-2685: Send a user's PAS Special Instruction notes to Salesforce
     
 
 ### FENDER-2672: Send application date user profile data to Mixpanel
+Customer ops team wanted to add the date users submitted applications to Mixpanel for
+better analysis. Therefore, `ApplicationDateEvent` class was added to `fender_application_processor` 
+so that the datetime data can be sent to Mixpanel when a user creates/submits an application.
+
 ### FENDER-2765: Reduce API calls from RTAC Status Processor
-
-
-## Paired With
-- Matt, Natalie, Kate, Bruce, Aiton, Jess
+Three methods -- `fetch_card_status`, `fetch_pan_masked` and `fetch_special_instructions`
+that were calling the same internal API route, `/internal/accounts/{alias_id}/card/details`.
+Instead of making helper method for each, `fetch_pan_masked` and `fetch_special_instructions`
+were combined with `fetch_card_status`. The bigger challenge was to edit and add unit tests.
 
 
 ## Observed
