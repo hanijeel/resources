@@ -1,6 +1,7 @@
 # numo Indi Software Engineer Internship Summary 
-(01/25/2021 - 04/23/2021)
-This is a summary on everything I learned and did during internship.
+
+This documents a summary on everything I learned and did 
+during numo indi software engineer internship (01/25/2021 - 04/23/2021).
 
 ## Interacted with..
 
@@ -32,6 +33,7 @@ This is a summary on everything I learned and did during internship.
 ### FENDER-2969: Learn about AWS & Python Lambdas
 ### FENDER-3009: Research Terraform
 ### FENDER-3005: Research Sendgrid API
+### FENDER-2632: SendGrid: Determine all consumers of fender-sender
 ### FENDER-2633: SendGrid: Syncing contact data
 ### FENDER-2679: Change ApplicationDate format in Salesforce
     ```py
@@ -72,31 +74,31 @@ This is a summary on everything I learned and did during internship.
 
 ## Industry/Company Culture Learned
 
-1 on 1
+### 1 on 1
 - Check in on performance, work, blockers and etc
 
-Agile Kanban Method
+### Agile Kanban Method
 - Visually pleasing method
 
-All-hands
+### All-hands
 - Getting to know company wide goals and achievements
 - Sharing interesting, intellectual and frugal knowlege (i.e. couponing)
 
-Daily Standup
+### Daily Standup
 - Share daily progress and goals for the day
 - Parking-lots(sidebar) to discuss blockers and etc
 - The only regularly scheduled meetup with real humans (covid special)
 - The Goodman sticky note method implemented in consumer team standup
 
-Demo
+### Demo
 - Present what people have been working on
 - Best way to learn about other teammates' accumulated knowledge
 
-Slack
+### Slack
 - Tone and manner: Being responsive and supportive, Writing succint messagnes
 - Efficiency: Integrating Zoom, Outlook and reminders
 - Lots of Schitt's Creek giffys (or jiffys)
 
 
 ## Resources Accumulated
-- Git Pointers: See the [link](LINK HERE) in GitHub.
+- Git Pointers: See the [link](https://github.com/hanijeel/resources/blob/main/git_pointers.md) in GitHub.
