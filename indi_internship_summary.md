@@ -3,6 +3,12 @@
 This documents a summary on everything I learned and did 
 during numo indi software engineer internship (01/25/2021 - 04/23/2021).
 
+---
+
+(Insert TLDR summary here)
+
+---
+
 ## Interacted with..
 
 ### Languages
@@ -10,6 +16,7 @@ during numo indi software engineer internship (01/25/2021 - 04/23/2021).
 - Python
 - Git
 - Serverless
+- Dart
 - Terraform
 - Scala
 - Java
@@ -19,90 +26,90 @@ during numo indi software engineer internship (01/25/2021 - 04/23/2021).
 - IntelliJ CE
 - Vim
 
-### Services
+### Platforms and Services
 - AWS: 
     CloudWatch, IAM, Lambda, Secrets Manager, Simple Queue Service, S3
 - Confluence
 - Jira
 - Salesforce: Marketing Cloud, Sandbox
 - Mixpanel
+- Flutter
 
+---
 
-## Jira Tickets Worked On
+## Jira Tickets Worked
 
-### FENDER-2969: Learn about AWS & Python Lambdas
+### FENDER-2969: Learn about AWS & Python
+A task ticket to learn about different services in AWS and basic Python.
+
 ### FENDER-3009: Research Terraform
-### FENDER-3005: Research Sendgrid API
-### FENDER-2632: SendGrid: Determine all consumers of fender-sender
-### FENDER-2633: SendGrid: Syncing contact data
-### FENDER-2679: Change ApplicationDate format in Salesforce
-```py
-sf["ApplicationDate__c"] = profile["applicationDate"].replace(" ", "T")
-```
-    
-Reformatted the existing application date data from YYYY-MM-DD HH:MM:SS 
-to YYYY-MM-DDTHH:MM:SS to comply with formatting in Salesforce. Later the
-code above needed to be replaced with more elegant fix (see below) by Bruce because
-the existing data in Prod environment had more variants.
+A task ticket to learn about Terraform.
 
-```py
-pendulum.parse(fuzzy).to_iso8601_string()
-```
-    
+### FENDER-3005: Research Sendgrid API
+More obscure description coming soon..
+
+### FENDER-2632: SendGrid: Determine all consumers of fender-sender
+More obscure description coming soon..
+
+### FENDER-2633: SendGrid: Syncing contact data
+More obscure description coming soon..
+
+### FENDER-2679: Change ApplicationDate format in Salesforce
+More obscure description coming soon..
+  
 ### FENDER-2681: Send user Address information to Salesforce
-When the user submits the application, the user address is saved in Okta and Visa, but
-the data was not relayed to Salesforce. For the story, the new user address data was taken
-from `fender-application-processor`, sent to `fender-force` and put on 
-`customer-service-queue` lambda. For existing users, when the user address is updated,
-the updated address is taken from profile_processor in `fender-RTAC`, and sent to 
-`fender-force`. There was an extra challenge of finding out what compound data field 
-must look like for Salesforce.
+More obscure description coming soon..
 
 ### FENDER-2685: Send a user's PAS Special Instruction notes to Salesforce
-    
+More obscure description coming soon..
 
 ### FENDER-2672: Send application date user profile data to Mixpanel
-Customer ops team wanted to add the date users submitted applications to Mixpanel for
-better analysis. Therefore, `ApplicationDateEvent` class was added to `fender_application_processor` 
-so that the datetime data can be sent to Mixpanel when a user creates/submits an application.
+More obscure description coming soon..
 
 ### FENDER-2765: Reduce API calls from RTAC Status Processor
-Three methods -- `fetch_card_status`, `fetch_pan_masked` and `fetch_special_instructions`
-that were calling the same internal API route, `/internal/accounts/{alias_id}/card/details`.
-Instead of making helper method for each, `fetch_pan_masked` and `fetch_special_instructions`
-were combined with `fetch_card_status`. The bigger challenge was to edit and add unit tests.
+More obscure description coming soon..
+
+### FENDER-3083: Send username user profile data to Mixpanel (Mobile Application)
+Work in progress..
 
 
-## Observed
-
+---
 
 ## Industry/Company Culture Learned
 
-### 1 on 1
-- Check in on performance, work, blockers and etc
+- 1 on 1
+: Check in on performance, work, blockers and etc
 
-### Agile Kanban Method
-- Visually pleasing method
+- Agile Kanban Method
+: Visually pleasing method
 
-### All-hands
-- Getting to know company wide goals and achievements
-- Sharing interesting, intellectual and frugal knowlege (i.e. couponing)
+- All-hands
+: Getting to know company wide goals and achievements
+    Sharing interesting, intellectual and frugal knowlege (i.e. couponing)
 
-### Daily Standup
-- Share daily progress and goals for the day
-- Parking-lots(sidebar) to discuss blockers and etc
-- The only regularly scheduled meetup with real humans (covid special)
-- The Goodman sticky note method implemented in consumer team standup
+- Daily Standup
+:    Share daily progress and goals for the day
+    Parking-lots(sidebar) to discuss blockers and etc
+    The only regularly scheduled meetup with real humans (covid special)
+    The Goodman sticky note method implemented in consumer team standup
 
-### Demo
-- Present what people have been working on
-- Best way to learn about other teammates' accumulated knowledge
+- Demo
+:    Present what people have been working on
+    Best way to learn about other teammates' accumulated knowledge
 
-### Slack
-- Tone and manner: Being responsive and supportive, Writing succint messagnes
-- Efficiency: Integrating Zoom, Outlook and reminders
-- Lots of Schitt's Creek giffys (or jiffys)
+- Slack
+:    Tone and manner: Being responsive and supportive, Writing succint messagnes
+    Efficiency: Integrating Zoom, Outlook and reminders
+    Lots of Schitt's Creek giffys (or jiffys)
 
+---
 
 ## Resources Accumulated
-- Git Pointers: See the [link](https://github.com/hanijeel/resources/blob/main/git_pointers.md) in GitHub.
+- Self-Guided Git Pointers [link to GitHub page](https://github.com/hanijeel/resources/blob/main/git_pointers.md)
+- Building Lambda functions with Python in AWS documentation [Tutorial](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html)
+- Terraform Tutorial for AWS infrastructure [Tutorial](https://learn.hashicorp.com/collections/terraform/aws-get-started)
+- Scala Learning Resources:
+    -ScalaTest by artima [link](https://www.scalatest.org/user_guide/using_matchers)
+    -Simple Concurrency with Scala Features [link](https://alvinalexander.com/scala/concurrency-with-scala-futures-tutorials-examples/)
+    -The Neophyte's Guide to Scala [link](https://danielwestheide.com/books/the-neophytes-guide-to-scala/)
+    -Scala Exercises [link](https://www.scala-exercises.org/)
