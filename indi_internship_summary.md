@@ -39,48 +39,47 @@ during numo indi software engineer internship (01/25/2021 - 04/23/2021).
 
 ## Jira Tickets Worked
 
-### FENDER-2969: Learn about AWS & Python
+### FR-2969: Learn about AWS & Python
 A task ticket to learn about different services in AWS and basic Python.
 
-### FENDER-3009: Research Terraform
+### FR-3009: Research Terraform
 A task ticket to learn about Terraform.
 
-### FENDER-3005: Research Sendgrid API
-More obscure description coming soon..
+### FR-3005: Research an external Email API service
+A task ticket to learn about an external Email API service and read the documentation.
 
-### FENDER-2632: SendGrid: Determine all consumers of fender-sender
-More obscure description coming soon..
+### FR-2632: Determine all consumers of an internal repo
+A spike ticket to determine the counsumers of a repo, to explore pros and cons of different options in changing the message structure, and to determine where in the internal system the data can be acquired from.
 
-### FENDER-2633: SendGrid: Syncing contact data
-More obscure description coming soon..
+### FR-2633: Syncing data with an external API
+A spike ticket to understand if the external API meets our needs: what the API uses as unique identifiers, the possible source of data pushed and the options of syncing the data with the API.
 
-### FENDER-2679: Change ApplicationDate format in Salesforce
-More obscure description coming soon..
+### FR-2679: Change date format for Salesforce
+A task ticket to change formatting of date data field to ISO format so that Salesforce can automatically recognize the data as date. It had to be patched later to account for variants in the existing date data.
   
-### FENDER-2681: Send user Address information to Salesforce
-More obscure description coming soon..
+### FR-2681: Send address to Salesforce
+A task ticket to automatically save new and updated user addresses to Salesforce. The biggest challenge was to understand the mechanism of compound data field in Salesforce. It was returned to dev from the QA stage as some of the acceptance criteria was not accounted for the first time.
 
-### FENDER-2685: Send a user's PAS Special Instruction notes to Salesforce
-More obscure description coming soon..
+### FR-2685: Send a new notes field to Salesforce
+A task ticket to send a new notes data field from PAS to Salesforce. This was the first time I interacted with the internal API and RTAC messages.
 
-### FENDER-2672: Send application date user profile data to Mixpanel
-More obscure description coming soon..
+### FR-2672: Send application date data to Mixpanel
+A task ticket to send the date a user creates and submits an initial application for better analysis. 
 
-### FENDER-2765: Reduce API calls from RTAC Status Processor
-More obscure description coming soon..
+### FR-2765: Reduce API calls from an internal repo
+A task ticket to refactor a number of redundant methods calling the same internal API route.
 
-### FENDER-3083: Send username user profile data to Mixpanel (Mobile Application)
-Work in progress..
-
+### FR-3083: Send username to Mixpanel in mobile app
+A task ticket to send username data from the mobile application to Mixpanel. This was the first time I learned Dart and Flutter.
 
 ---
 
 ## Industry/Company Culture Learned
 
-- 1 on 1
-: Check in on performance, work, blockers and etc
+- `1 on 1`
+: Weekly or biweekly meeting with the supervisor/manager to discuss work-related stuffs (direction, blockers, or solutions), check in on performancee, chat about life and etc.
 
-- Agile Kanban Method
+- `Agile Kanban Method`
 : Visually pleasing method
 
 - All-hands
@@ -106,6 +105,7 @@ Work in progress..
 
 ## Resources Accumulated
 - Self-Guided Git Pointers [link to GitHub page](https://github.com/hanijeel/resources/blob/main/git_pointers.md)
+- Self-Guided Homebrew Pointers [link to GitHubpage](here)
 - Building Lambda functions with Python in AWS documentation [Tutorial](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html)
 - Terraform Tutorial for AWS infrastructure [Tutorial](https://learn.hashicorp.com/collections/terraform/aws-get-started)
 - Scala Learning Resources:
