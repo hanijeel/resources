@@ -77,22 +77,18 @@ A task ticket to send username data from the mobile application to Mixpanel. Thi
 ## Industry/Company Culture Learned
 
 - `1 on 1`
-: Weekly or biweekly meeting with the supervisor/manager to discuss work-related stuffs (direction, blockers, or solutions), check in on performancee, chat about life and etc.
+: Weekly or biweekly meeting with the supervisor/manager to discuss work-related stuffs (direction, blockers, or solutions), check in on performancee, chat about life and ask questions.
 
 - `Agile Kanban Method`
-: Visually pleasing method
+: An agile framework that visualizes projects' workflow on a board and shows what stage of the process (To do, In progress, Code Review, QA, Done) each task is at.
 
-- All-hands
-: Getting to know company wide goals and achievements
-    Sharing interesting, intellectual and frugal knowlege (i.e. couponing)
+- `All-hands`
+: A company-wide meeting where all employees meet and share business updates. indi-all-hands meeting were more intimate than numo-all-hands, with different formats and interesting knowledge sharing (book reviews and couponing tips). 
 
-- Daily Standup
-:    Share daily progress and goals for the day
-    Parking-lots(sidebar) to discuss blockers and etc
-    The only regularly scheduled meetup with real humans (covid special)
-    The Goodman sticky note method implemented in consumer team standup
+- `Daily Standup`
+: Daily meetings where team members share progress from the day before and set goals for the day. Issues that need more discussion can be set aside for a 'parkinglot', which is equivalent to a sidebar meeting right after. The consumer team implemented the Goodman sticky note method, which helped visualizing and prioritizing each task.
 
-- Demo
+- `Demo`
 :    Present what people have been working on
     Best way to learn about other teammates' accumulated knowledge
 
