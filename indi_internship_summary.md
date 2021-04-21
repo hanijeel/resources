@@ -1,15 +1,10 @@
 # numo Indi Software Engineer Internship Summary 
 
-This documents a summary on everything I learned and did 
-during numo indi software engineer internship (01/25/2021 - 04/23/2021).
+This page documents everything I learned and did as a Software Engineer Intern at numo indi from 01/25/2021 to 04/23/2021. The internship provided an invaluable opportunity to understand the daily routine of a software engineer and to experience SDLC & DevOps process.
 
 ---
 
-(Insert TLDR summary here)
-
----
-
-## Interacted with..
+## Technical Details
 
 ### Languages
 (in the order of frequency)
@@ -30,10 +25,11 @@ during numo indi software engineer internship (01/25/2021 - 04/23/2021).
 - AWS: 
     CloudWatch, IAM, Lambda, Secrets Manager, Simple Queue Service, S3
 - Confluence
-- Jira
-- Salesforce: Marketing Cloud, Sandbox
-- Mixpanel
 - Flutter
+- Jira
+- Mixpanel
+- Postman
+- Salesforce: Marketing Cloud, Sandbox
 
 ---
 
@@ -83,29 +79,41 @@ A task ticket to send username data from the mobile application to Mixpanel. Thi
 : An agile framework that visualizes projects' workflow on a board and shows what stage of the process (To do, In progress, Code Review, QA, Done) each task is at.
 
 - `All-hands`
-: A company-wide meeting where all employees meet and share business updates. indi-all-hands meeting were more intimate than numo-all-hands, with different formats and interesting knowledge sharing (book reviews and couponing tips). 
+: A company-wide meeting where all employees meet and share business updates. indi-all-hands meeting were more intimate than numo-all-hands, with different formats and interesting knowledge sharing (e.g. book reviews and couponing tips). 
+
+- `Code Review`
+: Other people review the code I pushed up and leave feedback on the pull request. It was the best way to get feedback on my work and ensure the code to work properly. 
 
 - `Daily Standup`
 : Daily meetings where team members share progress from the day before and set goals for the day. Issues that need more discussion can be set aside for a 'parkinglot', which is equivalent to a sidebar meeting right after. The consumer team implemented the Goodman sticky note method, which helped visualizing and prioritizing each task.
 
 - `Demo`
-:    Present what people have been working on
-    Best way to learn about other teammates' accumulated knowledge
+: A biweekly session where team members can present what they have been working on. It was the best way to learn about other teammate's accumulated knowledge. Later in the internship, a new format was introduced where people would give a small TED Talk style presentation on certain topics like RTAC structure.
 
-- Slack
-:    Tone and manner: Being responsive and supportive, Writing succint messagnes
-    Efficiency: Integrating Zoom, Outlook and reminders
-    Lots of Schitt's Creek giffys (or jiffys)
+- `Pairing`
+: The best method to get through blockers and cooperate with teammates. Observing how people work, what tools they use and how they explain different processes and concepts was great learning experience. It was also great to get to know people in different stages of their careers and look forward to getting there.
+
+- `Slack`
+: A communication tool used in the team. I learned the tone and manner using Slack, especially being responsive and supportive and writing succint messages. The best takeaway is how to ask for help: state the desired outcome, the problem, and failed solutions (things I tried). 
+
+- `Unit Testing`
+: Writing tests for the smallest unit of the code, usually a function or a class to make sure that the code is behaving how I intended it to. It usually took much longer to write a passing test to write the actual code.
 
 ---
 
 ## Resources Accumulated
 - Self-Guided Git Pointers [link to GitHub page](https://github.com/hanijeel/resources/blob/main/git_pointers.md)
-- Self-Guided Homebrew Pointers [link to GitHubpage](here)
-- Building Lambda functions with Python in AWS documentation [Tutorial](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html)
-- Terraform Tutorial for AWS infrastructure [Tutorial](https://learn.hashicorp.com/collections/terraform/aws-get-started)
+- Building Lambda functions with Python in AWS documentation [tutorial](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html)
+- Real Python [link](https://realpython.com/)
+- Terraform Tutorial for AWS infrastructure [tutorial](https://learn.hashicorp.com/collections/terraform/aws-get-started)
+- AWS: Building Lambda functions with Python [link](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html)
 - Scala Learning Resources:
-    -ScalaTest by artima [link](https://www.scalatest.org/user_guide/using_matchers)
-    -Simple Concurrency with Scala Features [link](https://alvinalexander.com/scala/concurrency-with-scala-futures-tutorials-examples/)
-    -The Neophyte's Guide to Scala [link](https://danielwestheide.com/books/the-neophytes-guide-to-scala/)
-    -Scala Exercises [link](https://www.scala-exercises.org/)
+    - ScalaTest by artima [link](https://www.scalatest.org/user_guide/using_matchers)
+    - Simple Concurrency with Scala Features [link](https://alvinalexander.com/scala/concurrency-with-scala-futures-tutorials-examples/)
+    - The Neophyte's Guide to Scala [link](https://danielwestheide.com/books/the-neophytes-guide-to-scala/)
+    - Scala Exercises [link](https://www.scala-exercises.org/)
+- Dart Language Tutorial [tutorial](https://dart.dev/tutorials)
+
+---
+
+I would like to thank everyone at numo indi for giving this opportunity and helping me throughout the internship. If you have questions for this document, please reach out to me at leejinah7368 at gmail dot com.
